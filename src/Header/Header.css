@@ -1,0 +1,125 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* background-color: #b587cf; */
+  background-color: #023436;
+  background-repeat: repeat; /* ou repeat-x, repeat-y, no-repeat, dependendo da sua preferência */
+  color: #fff;
+  z-index: 999;
+  transition: padding-left 0.3s ease; /* Modificando a transição para padding-left */
+  box-shadow: 0 0 20px 3px black; /* Usando nome de cor */
+}
+
+.sidebar-open .header {
+  padding-left: 200px; /* Ajusta o padding-left do header quando o sidebar está aberto */
+}
+
+.Logo {
+  width: 15%;
+  max-width: 80px;
+  margin-left: 2%;
+  margin-right: auto;
+  margin-top: 10px;
+}
+
+.menu {
+  width: 50px;
+  height: 50px;
+  margin-right: 0px;
+  cursor: pointer;
+}
+
+.vector-container {
+  display: flex;
+  align-items: center;
+}
+
+.Vector {
+  height: auto;
+  width: 20%;
+  max-width: 100px;
+  margin-left: 5px;
+  transition: filter 0.3s ease;
+}
+
+.Vector:hover {
+  filter: grayscale(100%);
+}
+
+h1 {
+  margin-left: 15px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -300px; /* Inicialmente fora da tela */
+  width: 300px;
+  height: 100%;
+  background-color: #171717;
+  z-index: 1000; /* Aumentando o z-index para que o sidebar sobreponha o header */
+  transition: left 0.3s ease; /* Adiciona uma transição suave para a mudança de posição */
+  
+}
+
+.sidebar img{
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  
+}
+
+.topicos li {
+  /* display: inline-block; Altera o layout para flexível */
+  align-items: center;
+  background-color: #242928;
+  width: 90%;
+  margin-top: 10px;
+  border-radius: 20px;
+  text-decoration: none;
+  padding: 10px;
+}
+.topicos li a{
+  display: flex;
+  text-decoration: none;
+}
+
+.topicos li p {
+  color: #fff;
+  margin: 0;
+  margin-left: 10px;
+}
+
+.topicos li img {
+  width: 25px;
+  height: 25px;
+  flex-shrink: 0; /* Evita que a imagem seja encolhida para se ajustar ao parágrafo */
+  margin-right: 10px;
+}
+.sidebar img.logo-sidebar {
+  width: 50px;
+  height: 50px;
+  margin: 10px 180px 0px 10px;
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  z-index: 1001; /* Garante que o botão de fechar esteja na frente do sidebar */
+}

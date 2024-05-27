@@ -1,0 +1,107 @@
+.tela-consulta h2 {
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+.input-container {
+    display: flex;
+    align-items: center; 
+    margin-bottom: 10px;
+}
+
+.tela-consulta label {
+    width: 150px; 
+    text-align: right; 
+    margin-right: 10px;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+}
+
+.input-container input {
+    width: 400px;
+    padding: 5px;
+}
+
+.consultar-btn {
+    padding: 5px 50px;
+    margin-left:60px;
+    cursor: pointer;
+    border: none;
+    background: linear-gradient(to left, #049a8f, #049a8f) ;
+    color: #fff;
+    border-radius: 15px;
+}
+
+.consultar-btn:hover {
+    background: linear-gradient(to right, #4776E6, #049a8f);
+}
+
+.resultado-consulta {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.resultado-consulta h3{
+    color: #fff;
+    font-weight: bold;
+}
+
+.resultado-consulta ul li {
+    margin-bottom: 5px;
+}
+
+.resultado-consulta h2 {
+    color: #ebe7e7; 
+    font-size: 24px; 
+    margin-bottom: 15px; 
+}
+
+.resultado-separado {
+    width: calc(25% - 20px);
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 10px;
+    background-color: #528d88;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.resultado-separado h3 {
+    color: #0f0f0f; 
+    font-size: 20px; 
+    margin-bottom: 15px; 
+}
+
+.resultado-separado ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.alterarStatus-btn,
+.resultado-separado select {
+    margin-top: 10px;
+    margin-left: 25px;
+    border-radius: 10px;
+}
+
+.alterarStatus-btn {
+    background-color: #08464e;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.alterarStatus-btn:hover {
+    background-color: #0056b3;
+}

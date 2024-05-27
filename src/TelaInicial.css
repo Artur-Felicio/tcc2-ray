@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.bodyy {
+    background: linear-gradient(0deg, #023436, #049a8f);
+    background-image: url('./imgs/bodyy.png');
+    background-repeat: repeat;
+    /* background: linear-gradient (0deg, #161934, #161935) ; */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: margin-left 0.5s; /* Adicionando transição para o movimento do sidebar */
+}
+
+
+.BemVindo {
+    color: #fff;
+    font-size: 2em;
+    margin-bottom: 20px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: bold;
+}
+
+.campos {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 30px;
+}
+
+.div1 {
+    background-color: #023436; 
+    width: 90%; /* Largura ajustada */
+    max-width: 250px;
+    height: auto;
+    margin: 20px;
+    padding-top: 40px;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.div1 p{
+    margin: 10px;
+    font-family: "Ubuntu", sans-serif;
+}
+.div1 img{
+    width: 100px;
+}
+.div1:hover {
+    transform: translateY(-5px);
+    background-color: #049a8f;
+    cursor: pointer;
+}
+
+.div1:hover img {
+    filter: grayscale(100%);
+}
+
+.div1 p {
+    color: white;
+    font-size: 1.5em;
+}
+
+/* Media Query para telas menores */
+@media only screen and (max-width: 768px) {
+    .logo {
+        margin-left: 10px; /* Ajustar conforme necessário */
+        margin-right: 10px; /* Ajustar conforme necessário */
+    }
+
+    .Vector {
+        width: 30%;
+    }
+
+    .div1 {
+        width: 45%; /* Ajustar conforme necessário */
+        margin: 10px;
+    }
+}

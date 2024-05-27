@@ -1,0 +1,59 @@
+.telagit h2 {
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 3em; /* Alterado para unidade em para ser responsivo */
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column; /* Empilhando os itens verticalmente em telas pequenas */
+    margin-bottom: 10px;
+}
+
+.input-container label {
+    width: 100%; /* Largura total para se ajustar à tela */
+    text-align: left; /* Alinhado à esquerda para telas menores */
+    margin-bottom: 5px; /* Espaço entre os rótulos */
+    color: #fff;
+    font-size: 1.5em; /* Alterado para unidade em para ser responsivo */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.input-container input {
+    width: 100%; /* Largura total para se ajustar à tela */
+    padding: 5px;
+}
+
+.telagit button {
+    padding: 0.5em 2em; /* Alterado para unidades em para ser responsivo */
+    margin-left: auto; /* Mover o botão para a direita em telas pequenas */
+    margin-right: auto; /* Mover o botão para a esquerda em telas grandes */
+    cursor: pointer;
+    border: none;
+    background: linear-gradient(to left, #049a8f, #049a8f);
+    color: #fff;
+    border-radius: 0.5em; /* Alterado para unidades em para ser responsivo */
+}
+
+.telagit button:hover {
+    background: linear-gradient(to right, #4776E6, #049a8f);
+}
+
+@media screen and (min-width: 600px) {
+    .input-container {
+        flex-direction: row; /* Alterado para exibir em linha em telas maiores */
+        align-items: flex-start; /* Alinha os itens no início do contêiner flexível */
+    }
+
+    .input-container label {
+        width: auto; /* Largura automática para ocupar apenas o espaço necessário */
+        margin-right: 10px;
+        font-size: 20px;
+    }
+
+    .input-container input {
+        flex: 1; /* Faz com que os campos de entrada ocupem o espaço restante */
+    }
+}

@@ -1,0 +1,74 @@
+.tela-Admin {
+    display: flex; 
+    color: #fff;
+}
+
+.menu-lateral {
+    position: fixed; /* Manter o menu fixo na posição */
+    top: 10%; /* Posição do topo da página, ajuste conforme a altura do cabeçalho */
+    left: 0; /* Posição da esquerda da página */
+    height: calc(100% - 10%); /* Ocupar a altura total da página menos a altura do cabeçalho */
+    width: 150px; /* Definir a largura do menu conforme necessário */
+    background-color: #1f2525; /* Cor de fundo do menu */
+    padding: 20px; /* Espaçamento interno do menu */
+}
+
+.menu-lateral li {
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.resultado-consulta{
+    width: 70%;
+    height: 70%;
+}
+/* Conteúdo principal após o menu lateral */
+.conteudo-principal {
+  width: 100%;
+    margin-left: 200px; /*Deixar espaço para o menu lateral */
+    padding: 20px; /* Espaçamento interno do conteúdo principal */
+    margin-top: 60px; /* Compensar a altura do cabeçalho */
+}
+.lista-analistas li{
+  color: black;
+}
+
+.lista-atividades {
+  max-height: 720px; /* Limite de altura */
+  max-width: 1000px;
+  overflow-y: auto; /* Adicionar scroll vertical */
+  border: 1px solid #ddd; /* Borda opcional para visualização */
+  padding: 10px;
+  background-color: #f9f9f9; /* Fundo claro para contraste */
+  border-radius: 10px;
+}
+
+.atividade {
+  margin-bottom: 10px; /* Espaçamento entre atividades */
+  padding: 10px;
+  background-color: rgb(35, 156, 150);
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.atividade:hover {
+  background-color: #0b8585;
+}
+
+.atividade-completa {
+  padding: 20px;
+  background-color: #16c0b8;
+  border: 1px solid #ccc;
+  margin-top: 20px;
+}
+  /* canvas#chart {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+  } */
+  
+
+
+
+/* Estilos adicionais conforme necessário */
